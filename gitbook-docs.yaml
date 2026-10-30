@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Time-series analysis tools
+  structure:
+    - type: space
+      key: space-1
+      title: Time-series analysis tools
+      path: time-series-analysis-tools
+      default: true
+      content:
+        directory: ./time-series-analysis-tools
