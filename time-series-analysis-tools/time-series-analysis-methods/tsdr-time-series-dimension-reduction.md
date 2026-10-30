@@ -7,7 +7,7 @@ coverY: 0
 
 <figure><img src="../.gitbook/assets/tsdr_categories.png" alt=""><figcaption></figcaption></figure>
 
-{% embed url="https://github.com/KieranOwens/tsdr" %}
+{% embed url="https://github.com/DynamicsAndNeuralSystems/tsdr" %}
 
 Time-series dimension reduction (TSDR) methods are a class of algorithms for the dimension reduction of multivariate data that exploit temporal structure. In contrast to general dimension reduction (GDR) methods, the outputs of which are invariant to temporal permutation, TSDR methods are sensitive to temporal structure.
 
