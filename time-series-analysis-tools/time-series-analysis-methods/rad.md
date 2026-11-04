@@ -55,16 +55,19 @@ where $$\tilde{x}$$ is the median value of $$\mathbf{x}$$.
 
 ### 🏃 Running RAD in Matlab, Julia, and Python
 
-Code for implementing RAD is available in **Matlab**, **Julia**, and **Python** is collected in this [RAD Github repository](https://github.com/DynamicsAndNeuralSystems/RAD).
+Code for RAD in **Matlab**, **Julia**, and **Python** is collected in the [RAD GitHub repository](https://github.com/DynamicsAndNeuralSystems/RAD).
+In all three languages the function is called as `RAD(x, tau = 1, doCentre = true)`.
 
-RAD is also available through existing toolboxes in both Matlab and Julia:
+RAD is also available through existing toolboxes in Python, Matlab, and Julia:
 
-* **Matlab**: in _hctsa_ (as of `v1.08`), as the `CR_RAD()`master function, and `CR_RAD_1`, `CR_RAD_2`, and `CR_RAD_tau` operations
-* **Julia**: in the `TimeseriesFeatures.jl` package (`StatsBase.jl` extension), as the `CR_RAD::Feature`
+* **Python**: in [_pyhctsa_](https://github.com/DynamicsAndNeuralSystems/pyhctsa), as [`pyhctsa.operations.criticality.rad`](https://dynamicsandneuralsystems.github.io/pyhctsa/generated/pyhctsa.operations.criticality.rad.html) (pyhctsa is where the hctsa feature library is actively developed)
+* **Matlab**: in [_hctsa_](https://github.com/benfulcher/hctsa) (as of `v1.08`), as the [`CR_RAD()`](https://github.com/benfulcher/hctsa/blob/main/Operations/CR_RAD.m) master function, and `CR_RAD_1`, `CR_RAD_2`, and `CR_RAD_tau` operations
+* **Julia**: in the [`TimeseriesFeatures.jl`](https://github.com/brendanjohnharris/TimeseriesFeatures.jl) package (`StatsBase.jl` extension), as the `CR_RAD::Feature`
 
 ### ⚠️ Usage Guide
 
 RAD is best suited to univariate, regularly-sampled time-series data. The sampling period should be constant between time series, and if the time series are excessively smooth or over-sampled then the `tau` parameter should be set to a value greater than 1 (a suitable `tau` can often be inferred by inspecting the autocorrelation function of a time series).
 
-RAD also includes an optional centering step (`doAbs`), which should be enabled if the time series do not represent radial values (e.g., enable `doAbs` if the distribution is approximately symmetric or 'two-sided').
+RAD also includes an optional centering step (`doCentre`, on by default), which centers the time series at its median and takes absolute values.
+It should be enabled if the time series do not represent radial values (e.g., enable `doCentre` if the distribution is approximately symmetric or 'two-sided').
 
