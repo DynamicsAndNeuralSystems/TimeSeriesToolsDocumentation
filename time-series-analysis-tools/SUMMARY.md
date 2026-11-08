@@ -5,6 +5,7 @@
 ## Highly Comparative Toolkits
 
 * [🚀 hctsa](highly-comparative-toolkits/hctsa.md)
+* [🐍 pyhctsa](highly-comparative-toolkits/pyhctsa.md)
 * [🕵️ pyspi](highly-comparative-toolkits/pyspi.md)
 * [👮 theft](highly-comparative-toolkits/theft.md)
 
