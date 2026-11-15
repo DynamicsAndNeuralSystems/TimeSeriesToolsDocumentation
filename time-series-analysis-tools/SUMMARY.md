@@ -20,3 +20,4 @@
 * [🖥️ Feature-based mutual info](time-series-analysis-methods/feature-based-mutual-info.md)
 * [MPSTime](time-series-analysis-methods/mpstime.md)
 * [TSDR: time-series dimension reduction](time-series-analysis-methods/tsdr-time-series-dimension-reduction.md)
+* [🐢 f-SFA](time-series-analysis-methods/f-sfa.md)
